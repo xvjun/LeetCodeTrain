@@ -19,6 +19,14 @@ class ScalaArray[T:ClassTag](length:Int) {
     Size
   }
 
+  def getFirst(): T ={
+    get(Size-1)
+  }
+
+  def getLast(): T ={
+    get(0)
+  }
+
   def getCapacity(): Int ={
     data.length
   }

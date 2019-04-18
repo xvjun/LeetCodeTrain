@@ -51,6 +51,14 @@ public class JavaArray<E> {
         return data[index];
     }
 
+    public E getFirst(){
+        return get(size-1);
+    }
+
+    public E getLast(){
+        return get(0);
+    }
+
     /**
      * 修改指定位置元素的值
      * @param index
@@ -108,7 +116,8 @@ public class JavaArray<E> {
     }
 
     public
-    @Override String toString(){ StringBuilder res = new StringBuilder();
+    @Override String toString(){
+        StringBuilder res = new StringBuilder();
          res.append(String.format("Array: size=%d,capacity=%d\n",size,data.length));
          res.append("[");
          for(int i=0;i<size;i++){
