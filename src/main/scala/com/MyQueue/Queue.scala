@@ -1,4 +1,4 @@
-package MyQueue
+package com.MyQueue
 
 
 trait Queue[T] {

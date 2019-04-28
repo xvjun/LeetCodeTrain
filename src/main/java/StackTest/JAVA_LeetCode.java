@@ -1,5 +1,7 @@
 package StackTest;
 
+import Linked.LinkedList;
+
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Stack;
@@ -144,6 +146,5 @@ public class JAVA_LeetCode {
         else {return false;}
     }
 
-    //6
 
 }

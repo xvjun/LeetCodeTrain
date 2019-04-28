@@ -1,6 +1,6 @@
-package StackTest
+package com.MyStackTest.MyStack
 
-import List.ScalaArray
+import com.MyList.ScalaArray
 
 import scala.reflect.ClassTag
 

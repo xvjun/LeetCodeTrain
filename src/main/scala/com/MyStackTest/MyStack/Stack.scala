@@ -1,4 +1,4 @@
-package StackTest.MyStack
+package com.MyStackTest.MyStack
 
 trait Stack[T] {
 

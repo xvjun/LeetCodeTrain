@@ -1,5 +1,4 @@
-package StackTest
-
+package com.MyStackTest
 
 import scala.collection.mutable
 import scala.collection.mutable._
@@ -59,8 +58,8 @@ object ScalaLeetCode {
     * @return
     */
   def backspaceCompare(S: String, T: String): Boolean = {
-    var s = Stack[Char]()
-    var t = Stack[Char]()
+    var s = mutable.Stack[Char]()
+    var t = mutable.Stack[Char]()
     for(i <- S){
       if(i=='#' && !s.isEmpty){s.pop()}
       else if(i!='#'){s.push(i)}
@@ -79,7 +78,7 @@ object ScalaLeetCode {
     * @return
     */
   def calPoints(ops: Array[String]): Int = {
-    var s = Stack[Int]()
+    var s = mutable.Stack[Int]()
     for(i <- ops){
       if(i.equals("C")){
         s.pop()
@@ -108,7 +107,7 @@ object ScalaLeetCode {
     * @return
     */
   def isValid(s: String): Boolean = {
-    var st = Stack[Char]()
+    var st = mutable.Stack[Char]()
     for(i <- s){
       if(st.length==0){
         st.push(i)

@@ -1,4 +1,4 @@
-package MyQueue
+package com.MyQueue
 
 import scala.reflect.ClassTag
 

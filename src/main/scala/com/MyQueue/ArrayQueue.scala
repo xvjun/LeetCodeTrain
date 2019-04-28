@@ -1,6 +1,6 @@
-package MyQueue
+package com.MyQueue
 
-import List.ScalaArray
+import com.MyList.ScalaArray
 
 import scala.reflect.ClassTag
 

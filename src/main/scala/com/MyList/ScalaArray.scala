@@ -1,4 +1,4 @@
-package List
+package com.MyList
 
 import scala.reflect.ClassTag
 
