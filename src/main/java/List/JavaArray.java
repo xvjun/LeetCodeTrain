@@ -18,6 +18,14 @@ public class JavaArray<E> {
     public JavaArray(){ this(10);
     }
 
+    public JavaArray(E[] arr){
+        data = (E[]) new Object[arr.length];
+        for (int i = 0; i < arr.length; i++) {
+            data[i] = arr[i];
+        }
+        size = arr.length;
+    }
+
     /**
      * 获得size的大小
      * @return
@@ -208,6 +216,20 @@ public class JavaArray<E> {
         }
         if(sum==0){return false;}
         else{return true;}
+    }
+
+    /**
+     * 交换下标i和j的元素
+     * @param i
+     * @param j
+     */
+    public void swap(int i,int j){
+        if(i < 0 || i >= size || j<0 || j>= size ){
+            throw new IllegalArgumentException("index is illegal");
+        }
+        E t = data[i];
+        data[i] = data[j];
+        data[j] = t;
     }
 
     public static void main(String[] args) { JavaArray<Integer> arr = new JavaArray();
