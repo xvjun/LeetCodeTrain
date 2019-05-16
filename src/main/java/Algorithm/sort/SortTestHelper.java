@@ -106,6 +106,18 @@ public class SortTestHelper {
         }
     }
 
+    // 生成一个完全逆序的数组
+    public static Integer[] generateInversedArray( int n ){
+
+        Integer[] arr = generateNearlyOrderedArray( n,0 );
+        for( int i = n/2 - 1 ; i >= 0 ; i -- ){
+            Integer t = arr[i];
+            arr[i] = arr[n-i-1];
+            arr[n-i-1] = t;
+        }
+        return arr;
+    }
+
     public static void main(String[] args) {
 
     }
